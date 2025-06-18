@@ -1,0 +1,32 @@
+---
+# cPanel Git Version Control configuration for Roshe Mentorship (inside new_roshe/)
+
+repository:
+  url: "git@github.com:Roshe-mentorship/new_roshe.git"
+  branch: "main"
+  depth: 1
+  deploy_on_update: true
+  path: "."  # work in this directory
+
+deployment:
+  tasks:
+    # Install deps and prepare Node.js app
+    - npm ci
+    - npm run build
+    # No need to copy files - run directly from repo
+
+application:
+  type: "nodejs"
+  # Use custom server.js for cPanel Node.js app
+  app_root: "."
+  startup_file: "server.js"
+  passenger_app_env: "production"
+  environment:
+    NODE_ENV: "production"
+    AGORA_APP_ID: "${AGORA_APP_ID}"
+    AGORA_APP_CERTIFICATE: "${AGORA_APP_CERTIFICATE}"
+    SUPABASE_URL: "${SUPABASE_URL}"
+    SUPABASE_SERVICE_ROLE_KEY: "${SUPABASE_SERVICE_ROLE_KEY}"
+    NEXT_PUBLIC_SUPABASE_URL: "${NEXT_PUBLIC_SUPABASE_URL}"
+    NEXT_PUBLIC_SUPABASE_ANON_KEY: "${NEXT_PUBLIC_SUPABASE_ANON_KEY}"
+    # Add any other env vars here as needed

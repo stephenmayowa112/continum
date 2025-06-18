@@ -1,0 +1,6 @@
+/* app/dashboard/global.css */
+.writing-vertical {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-orientation: mixed;
+}

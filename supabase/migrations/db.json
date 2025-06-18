@@ -1,0 +1,602 @@
+[
+  {
+    "table_name": "Users",
+    "column_name": "user_id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "Users",
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "Users",
+    "column_name": "name",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "Users",
+    "column_name": "linkedin",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "Users",
+    "column_name": "dob",
+    "data_type": "date",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "availability",
+    "column_name": "id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "availability",
+    "column_name": "mentor_id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "availability",
+    "column_name": "start_time",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "availability",
+    "column_name": "status",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "availability",
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "availability",
+    "column_name": "end_time",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "availability",
+    "column_name": "updated_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "bookings",
+    "column_name": "id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "bookings",
+    "column_name": "mentor_id",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "bookings",
+    "column_name": "mentor_name",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "bookings",
+    "column_name": "mentor_email",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "bookings",
+    "column_name": "user_id",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "bookings",
+    "column_name": "user_email",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "bookings",
+    "column_name": "date",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "bookings",
+    "column_name": "time",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "bookings",
+    "column_name": "booking_date",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "bookings",
+    "column_name": "booking_time",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "bookings",
+    "column_name": "session_type",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "bookings",
+    "column_name": "meeting_id",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "bookings",
+    "column_name": "meeting_url",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "bookings",
+    "column_name": "password",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "bookings",
+    "column_name": "meeting_password",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "bookings",
+    "column_name": "status",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "bookings",
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "bookings",
+    "column_name": "updated_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "bookings",
+    "column_name": "slot_id",
+    "data_type": "uuid",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "expertise_tags",
+    "column_name": "id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "expertise_tags",
+    "column_name": "name",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "expertise_tags",
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentees",
+    "column_name": "id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentees",
+    "column_name": "user_id",
+    "data_type": "uuid",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentees",
+    "column_name": "name",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentees",
+    "column_name": "email",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentees",
+    "column_name": "dob",
+    "data_type": "date",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentees",
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentees",
+    "column_name": "linkedin",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentees",
+    "column_name": "biography",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentees",
+    "column_name": "linkedin_url",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentees",
+    "column_name": "date_of_birth",
+    "data_type": "date",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentees",
+    "column_name": "role",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentees",
+    "column_name": "profile_image_url",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentees",
+    "column_name": "bio",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentees",
+    "column_name": "location",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentees",
+    "column_name": "company",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentees",
+    "column_name": "specialization",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentees",
+    "column_name": "years_experience",
+    "data_type": "integer",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentor_calendar_oauth",
+    "column_name": "id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentor_calendar_oauth",
+    "column_name": "mentor_id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentor_calendar_oauth",
+    "column_name": "provider",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentor_calendar_oauth",
+    "column_name": "access_token",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentor_calendar_oauth",
+    "column_name": "refresh_token",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentor_calendar_oauth",
+    "column_name": "expires_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentor_calendar_oauth",
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentor_expertise",
+    "column_name": "mentor_id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentor_expertise",
+    "column_name": "tag_id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentor_expertise",
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentor_reviews",
+    "column_name": "id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentor_reviews",
+    "column_name": "mentor_id",
+    "data_type": "uuid",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentor_reviews",
+    "column_name": "mentee_id",
+    "data_type": "uuid",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentor_reviews",
+    "column_name": "session_id",
+    "data_type": "uuid",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentor_reviews",
+    "column_name": "rating",
+    "data_type": "integer",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentor_reviews",
+    "column_name": "feedback",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentor_reviews",
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentor_social_links",
+    "column_name": "id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentor_social_links",
+    "column_name": "mentor_id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentor_social_links",
+    "column_name": "platform",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentor_social_links",
+    "column_name": "url",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentor_social_links",
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentoring_sessions",
+    "column_name": "id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentoring_sessions",
+    "column_name": "mentor_id",
+    "data_type": "uuid",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentoring_sessions",
+    "column_name": "mentee_id",
+    "data_type": "uuid",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentoring_sessions",
+    "column_name": "status",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentoring_sessions",
+    "column_name": "start_time",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentoring_sessions",
+    "column_name": "end_time",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentoring_sessions",
+    "column_name": "cancelled_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentoring_sessions",
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentoring_sessions",
+    "column_name": "title",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentoring_sessions",
+    "column_name": "meeting_link",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentoring_sessions",
+    "column_name": "cancellation_reason",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentoring_sessions",
+    "column_name": "description",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentors",
+    "column_name": "id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentors",
+    "column_name": "user_id",
+    "data_type": "uuid",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentors",
+    "column_name": "name",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentors",
+    "column_name": "dob",
+    "data_type": "date",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentors",
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentors",
+    "column_name": "linkedin",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentors",
+    "column_name": "biography",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentors",
+    "column_name": "linkedin_url",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentors",
+    "column_name": "date_of_birth",
+    "data_type": "date",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentors",
+    "column_name": "email",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentors",
+    "column_name": "role",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "mentors",
+    "column_name": "location",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentors",
+    "column_name": "company",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentors",
+    "column_name": "sessions_completed",
+    "data_type": "integer",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "mentors",
+    "column_name": "reviews_count",
+    "data_type": "integer",
+    "is_nullable": "YES"
+  }
+]
