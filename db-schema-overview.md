@@ -1,5 +1,6 @@
-[
-  {
+# DB Schema Overview
+
+{
     "table_schema": "auth",
     "table_name": "audit_log_entries",
     "column_name": "instance_id",

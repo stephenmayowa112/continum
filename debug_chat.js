@@ -32,7 +32,7 @@ async function debugChat() {
     // Test 2: Check if RPC functions exist
     console.log('\n2. Testing RPC functions...');
     try {
-      const { data: rpcTest, error: rpcError } = await supabase.rpc('get_user_chat_rooms');
+      const { error: rpcError } = await supabase.rpc('get_user_chat_rooms');
       if (rpcError) {
         console.log('❌ RPC Error:', rpcError.message);
       } else {
@@ -68,7 +68,7 @@ async function debugChat() {
     }
 
     // Test table access
-    const { data: roomsData, error: roomsError } = await supabase
+    const { error: roomsError } = await supabase
       .from('chat_rooms')
       .select('*')
       .limit(1);
