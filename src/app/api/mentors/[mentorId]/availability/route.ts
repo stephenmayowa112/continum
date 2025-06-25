@@ -3,8 +3,7 @@ import { createAdminClient } from '../../../../../../lib/supabaseClient';
 
 export const runtime = 'nodejs';
 
-// Use shared admin client helper that picks up the service-role key
-// Always instantiate inside the handler so env vars are read at runtime
+
 
 export async function GET(request: NextRequest, context: any) {
   const supabaseAdmin = createAdminClient();
