@@ -1,4 +1,3 @@
-
 import { NextResponse } from 'next/server';
 
 export async function GET() {
@@ -9,6 +8,7 @@ export async function GET() {
 
 export async function POST() {
   try {
+    // Test commit to trigger Vercel deployment
     // TODO: Invoke your migration logic here, e.g., run a script or call a service
     // await import('../../../../apply_migrations.js');
     return NextResponse.json({ success: true, message: 'Migrations applied successfully.' });
